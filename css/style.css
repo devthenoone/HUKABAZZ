@@ -866,59 +866,83 @@ section {
 }
 
 /* ==========================================================================
-   PARTNERS / FOUNDERS
+   CLIENTS
    ========================================================================== */
-.partner-grid {
+.client-feature {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-  max-width: 760px;
-  margin: 0 auto;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 64px;
+  align-items: center;
 }
-.partner-card {
-  background: var(--bg-2);
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  padding: 48px 36px;
-  text-align: center;
-  transition: background 0.5s var(--ease), border-color 0.5s var(--ease), transform 0.5s var(--ease);
-}
-.partner-card:hover {
-  background: var(--bg-3);
-  border-color: var(--gold);
-  transform: translateY(-4px);
-}
-.partner-mono {
-  width: 88px;
-  height: 88px;
-  margin: 0 auto 24px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  border: 1px solid var(--gold);
-  font-family: 'Cinzel', serif;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  color: var(--gold);
-  background: radial-gradient(circle at 50% 30%, rgba(201,169,110,0.12), transparent 70%);
-}
-.partner-card h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 26px;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  margin-bottom: 8px;
-}
-.partner-role {
+.client-tag {
+  display: inline-block;
   font-size: 11px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+.client-info h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+.client-meta {
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+  margin-bottom: 22px;
+}
+.client-info p:not(.client-meta) {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 460px;
+}
+.client-stats {
+  display: flex;
+  gap: 48px;
+  margin-top: 32px;
+}
+.cstat { display: flex; flex-direction: column; gap: 6px; }
+.cstat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  color: var(--gold);
+  line-height: 1;
+}
+.cstat-lbl {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--ink-mute);
 }
+.client-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 180px);
+  gap: 14px;
+}
+.cimg {
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  filter: saturate(0.95);
+  transition: transform 0.6s var(--ease);
+}
+.cimg:hover { transform: scale(1.03); }
+.cimg-a { grid-row: span 2; background-image: url('../images/venue-2.jpg'); }
+.cimg-b { background-image: url('../images/gallery-3.jpg'); }
+.cimg-c { background-image: url('../images/gallery-7.jpg'); }
+@media (max-width: 900px) {
+  .client-feature { grid-template-columns: 1fr; gap: 40px; }
+}
 @media (max-width: 600px) {
-  .partner-grid { grid-template-columns: 1fr; max-width: 360px; }
-  .partner-card { padding: 40px 28px; }
+  .client-gallery { grid-template-rows: repeat(2, 140px); }
+  .client-stats { gap: 32px; }
 }
 
 /* ==========================================================================
