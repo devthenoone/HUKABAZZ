@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 380" role="img" aria-label="Huka Artist">
+  <defs>
+    <linearGradient id="ha-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9c876"/>
+      <stop offset="22%" stop-color="#f7e6a6"/>
+      <stop offset="45%" stop-color="#c9962f"/>
+      <stop offset="68%" stop-color="#f3d987"/>
+      <stop offset="100%" stop-color="#a9791f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- HA monogram -->
+  <g fill="url(#ha-gold)">
+    <!-- H left stem -->
+    <rect x="95" y="68" width="18" height="138" rx="1"/>
+    <!-- H left stem serifs -->
+    <rect x="86" y="68" width="36" height="7" rx="1"/>
+    <rect x="86" y="199" width="36" height="7" rx="1"/>
+    <!-- H right stem -->
+    <rect x="139" y="68" width="18" height="138" rx="1"/>
+    <rect x="130" y="68" width="36" height="7" rx="1"/>
+    <rect x="130" y="199" width="36" height="7" rx="1"/>
+    <!-- H crossbar -->
+    <rect x="113" y="128" width="26" height="16"/>
+  </g>
+
+  <!-- A (stroked, taller, overlapping to the right) -->
+  <g fill="none" stroke="url(#ha-gold)" stroke-width="17" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M184 208 L214 58 L244 208"/>
+  </g>
+  <g fill="url(#ha-gold)">
+    <!-- A crossbar -->
+    <rect x="197" y="160" width="34" height="13"/>
+    <!-- A foot serifs -->
+    <rect x="172" y="201" width="30" height="7" rx="1"/>
+    <rect x="226" y="201" width="30" height="7" rx="1"/>
+  </g>
+
+  <!-- flowing swoosh ribbon under the monogram -->
+  <path d="M70 196 C120 224 160 168 190 168 C224 168 256 206 296 178"
+        fill="none" stroke="url(#ha-gold)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M82 188 C124 210 162 162 190 162 C222 162 252 196 288 172"
+        fill="none" stroke="url(#ha-gold)" stroke-width="3.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- HUKA wordmark -->
+  <text x="180" y="288" text-anchor="middle"
+        font-family="Cinzel, Georgia, 'Times New Roman', serif"
+        font-size="56" font-weight="600" letter-spacing="10"
+        fill="url(#ha-gold)">HUKA</text>
+
+  <!-- ARTIST with side rules -->
+  <line x1="92" y1="332" x2="128" y2="332" stroke="url(#ha-gold)" stroke-width="2"/>
+  <line x1="232" y1="332" x2="268" y2="332" stroke="url(#ha-gold)" stroke-width="2"/>
+  <text x="180" y="340" text-anchor="middle"
+        font-family="Cinzel, Georgia, 'Times New Roman', serif"
+        font-size="24" font-weight="500" letter-spacing="11"
+        fill="url(#ha-gold)">ARTIST</text>
+</svg>
